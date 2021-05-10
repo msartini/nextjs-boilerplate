@@ -1,0 +1,14 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: weekly
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: next-pwa
+    versions:
+    - 5.2.14
+  - dependency-name: eslint-plugin-prettier
+    versions:
+    - 3.4.0
